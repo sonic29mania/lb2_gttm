@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Каталог BagsOn — жіночі та чоловічі сумки, дорожні сумки, міні-сумки та стильні аксесуари.">
+    <meta name="keywords" content="BagsOn, каталог сумок, жіночі сумки, чоловічі сумки, дорожні сумки">
+    <meta name="author" content="Софія Бондар">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#111111">
+
+    <title>Каталог | BagsOn</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="catalog-page">
+    <!-- HEADER -->
+    <header class="header" id="header-placeholder">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <input type="checkbox" id="search-toggle" class="search-toggle">
+
+        <label for="menu-toggle" class="burger" aria-label="Відкрити меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Головна</a></li>
+
+                <li class="dropdown">
+                    <a href="catalog.html">Каталог</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="catalog.html#women">Жіночі</a></li>
+                        <li><a href="catalog.html#men">Чоловічі</a></li>
+                        <li><a href="catalog.html#travel">Дорожні</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="index.html#popular">Популярні сумки</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <img src="img/logo.png" alt="Логотип BagsOn">
+        </div>
+
+        <label for="search-toggle" class="search-button" aria-label="Відкрити пошук">
+            <img src="img/search.png" alt="Пошук">
+        </label>
+
+        <div class="search">
+            <input type="text" placeholder="Пошук...">
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="catalog">
+        <section class="catalog__hero">
+            <h1>Каталог сумок BagsOn</h1>
+            <p>Оберіть сумку для навчання, роботи, подорожі або щоденного образу.</p>
+        </section>
+
+        <aside class="catalog__filters">
+            <h2>Фільтри</h2>
+
+            <form class="catalog-filter">
+                                <div class="catalog-filter__group">
+                    <h3>Сортування</h3>
+
+                    <select name="sort">
+                        <option value="popular">За популярністю</option>
+                        <option value="cheap">Від дешевих до дорогих</option>
+                        <option value="expensive">Від дорогих до дешевих</option>
+                    </select>
+                </div>
+                <div class="catalog-filter__group">
+                    <h3>Категорія</h3>
+
+                    <label>
+                        <input type="checkbox" name="category" value="women">
+                        Жіночі сумки
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="category" value="men">
+                        Чоловічі сумки
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="category" value="travel">
+                        Дорожні сумки
+                    </label>
+                </div>
+
+                <div class="catalog-filter__group">
+                    <h3>Матеріал</h3>
+
+                    <label>
+                        <input type="radio" name="material" value="leather">
+                        Шкіра
+                    </label>
+
+                    <label>
+                        <input type="radio" name="material" value="textile">
+                        Текстиль
+                    </label>
+
+                    <label>
+                        <input type="radio" name="material" value="eco">
+                        Екошкіра
+                    </label>
+                </div>
+
+
+
+                <button type="submit">Застосувати</button>
+            </form>
+        </aside>
+
+        <section class="catalog__content">
+            <h2 id="women">Жіночі сумки</h2>
+
+            <div class="catalog__grid">
+                <article class="catalog-card">
+                    <img src="img/photo_1.png" alt="Жіноча сумка Classic Bag">
+                    <div class="catalog-card__info">
+                        <h3>Classic Bag</h3>
+                        <p>Елегантна сумка для щоденного образу.</p>
+                        <span>1200 грн</span>
+                        <button>Детальніше</button>
+                    </div>
+                </article>
+
+                <article class="catalog-card">
+                    <img src="img/photo_2.jpg" alt="Жіноча сумка Elegant Style">
+                    <div class="catalog-card__info">
+                        <h3>Elegant Style</h3>
+                        <p>Стильна модель для роботи та прогулянок.</p>
+                        <span>1500 грн</span>
+                        <button>Детальніше</button>
+                    </div>
+                </article>
+
+                <article class="catalog-card">
+                    <img src="img/photo_3.jpg" alt="Міні-сумка Mini Bag">
+                    <div class="catalog-card__info">
+                        <h3>Mini Bag</h3>
+                        <p>Компактна сумка для легкого образу.</p>
+                        <span>900 грн</span>
+                        <button>Детальніше</button>
+                    </div>
+                </article>
+            </div>
+
+            <h2 id="men">Чоловічі сумки</h2>
+
+            <div class="catalog__grid">
+                <article class="catalog-card">
+                    <img src="img/photo_4.jpg" alt="Чоловіча сумка Travel Bag">
+                    <div class="catalog-card__info">
+                        <h3>Travel Bag</h3>
+                        <p>Містка сумка для подорожей і роботи.</p>
+                        <span>2000 грн</span>
+                        <button>Детальніше</button>
+                    </div>
+                </article>
+
+                <article class="catalog-card">
+                    <img src="img/photo_5.jpg" alt="Міська сумка Urban Bag">
+                    <div class="catalog-card__info">
+                        <h3>Urban Bag</h3>
+                        <p>Практична модель для міського стилю.</p>
+                        <span>1300 грн</span>
+                        <button>Детальніше</button>
+                    </div>
+                </article>
+
+                <article class="catalog-card">
+                    <img src="img/photo_6.jpg" alt="Преміальна сумка Luxury Bag">
+                    <div class="catalog-card__info">
+                        <h3>Luxury Bag</h3>
+                        <p>Преміальна сумка з якісних матеріалів.</p>
+                        <span>2500 грн</span>
+                        <button>Детальніше</button>
+                    </div>
+                </article>
+            </div>
+
+            <h2 id="travel">Дорожні сумки</h2>
+
+            <div class="catalog__grid">
+                <article class="catalog-card">
+                    <img src="img/photo_4.jpg" alt="Велика дорожня сумка">
+                    <div class="catalog-card__info">
+                        <h3>Big Travel</h3>
+                        <p>Зручна сумка для коротких поїздок.</p>
+                        <span>2200 грн</span>
+                        <button>Детальніше</button>
+                    </div>
+                </article>
+
+                <article class="catalog-card">
+                    <img src="img/photo_5.jpg" alt="Міська дорожня сумка">
+                    <div class="catalog-card__info">
+                        <h3>City Travel</h3>
+                        <p>Легка сумка для міста та подорожей.</p>
+                        <span>1700 грн</span>
+                        <button>Детальніше</button>
+                    </div>
+                </article>
+
+                <article class="catalog-card">
+                    <img src="img/photo_6.jpg" alt="Преміальна дорожня сумка">
+                    <div class="catalog-card__info">
+                        <h3>Premium Travel</h3>
+                        <p>Містка дорожня сумка у стильному дизайні.</p>
+                        <span>2800 грн</span>
+                        <button>Детальніше</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="catalog__banner">
+            <div class="catalog__banner-text">
+                <h2>Нова колекція вже у продажу</h2>
+                <p>Замовляйте стильні сумки BagsOn онлайн або відвідайте наші магазини.</p>
+                <a href="contact.html">Зв'язатися з нами</a>
+            </div>
+
+            <div class="catalog__banner-image">
+                <img src="img/photo_6.jpg" alt="Нова колекція сумок BagsOn">
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer-placeholder">
+        <div class="footer-left">
+            <h2>BagsOn</h2>
+            <p>Найбільший магазин сумок</p>
+        </div>
+
+        <div class="footer-center">
+            <a href="index.html">Головна</a>
+            <a href="contact.html">Контакти</a>
+            <a href="catalog.html">Асортимент</a>
+            <a href="index.html#sale">Акції</a>
+            <a href="index.html#about">Про нас</a>
+        </div>
+
+        <div class="footer-right">
+            <a href="#"><img src="img/instagram.png" alt="Instagram BagsOn"></a>
+            <a href="#"><img src="img/facebook.png" alt="Facebook BagsOn"></a>
+            <a href="#"><img src="img/telegram.png" alt="Telegram BagsOn"></a>
+        </div>
+    </footer>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
