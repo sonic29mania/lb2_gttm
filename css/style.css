@@ -69,18 +69,8 @@ label {
     -webkit-tap-highlight-color: transparent;
 }
 
-/* ===============
-   БЛОК 1, ЗАВДАННЯ 2
-   БЕМ-МЕТОДОЛОГІЯ
-   ---------------------------------------------------------
-   У коді використовуються класи за принципом БЕМ:
-   .catalog__hero, .catalog__filters, .catalog-card__info,
-   .fixed-widget__text тощо.
-   ===============*/
-
-/* 
-   02. HEADER
-   */
+/*БЛОК 1, ЗАВДАННЯ 2
+   БЕМ-МЕТОДОЛОГІЯ*/
 .header {
     grid-area: header;
 
@@ -105,7 +95,6 @@ label {
     -webkit-backdrop-filter: blur(10px);
 }
 
-/* Hidden checkboxes for mobile menu/search */
 .menu-toggle,
 .search-toggle {
     position: absolute;
@@ -113,7 +102,6 @@ label {
     pointer-events: none;
 }
 
-/* Desktop: mobile buttons are hidden */
 .burger,
 .search-button {
     display: none;
@@ -170,9 +158,6 @@ label {
     transform: translateY(-1px);
 }
 
-/* 
-   03. NAVIGATION
-   */
 .nav {
     grid-area: nav;
     display: grid;
@@ -242,9 +227,6 @@ label {
     display: block;
 }
 
-/* 
-   04. LOGO
-   */
 .logo {
     grid-area: logo;
 
@@ -259,9 +241,7 @@ label {
     transform: scale(1.3);
 }
 
-/* 
-   05. SEARCH
-   */
+
 .search {
     grid-area: search;
 
@@ -278,9 +258,6 @@ label {
     outline: none;
 }
 
-/* 
-   06. MAIN LAYOUT
-   */
 main {
     grid-area: main;
     padding: 30px 20px;
@@ -308,18 +285,10 @@ main {
     text-transform: uppercase;
 }
 
-/* ===============
-   БЛОК 1, ЗАВДАННЯ 1
+/* БЛОК 1, ЗАВДАННЯ 1
    CSS GRID LAYOUT ДЛЯ ГОЛОВНОЇ СТОРІНКИ
-   ---------------------------------------------------------
-   Контент розташовано через grid-template-areas:
-   video, products, aside.
-   HTML-структура при цьому не змінюється.
-   ===============*/
+*/
 
-/* 
-   07. INDEX PAGE GRID
-   */
 body:not(.contact-page):not(.catalog-page) main {
     width: 100%;
     max-width: 1200px;
@@ -333,9 +302,6 @@ body:not(.contact-page):not(.catalog-page) main {
     gap: 30px;
 }
 
-/* 
-   08. ASIDE
-   */
 aside {
     grid-area: aside;
     align-self: start;
@@ -351,9 +317,6 @@ aside {
     box-shadow: var(--shadow-md);
 }
 
-/* 
-   09. VIDEO SLIDER
-   */
 .video-slider {
     grid-area: video;
 
@@ -409,17 +372,10 @@ aside {
 }
 
 
-/* ===============
-   БЛОК 3, ЗАВДАННЯ 2
-   ГАЛЕРЕЯ / КАРТКИ З АНІМАЦІЄЮ ЗОБРАЖЕНЬ
-   ---------------------------------------------------------
-   При наведенні зображення збільшується, стає насиченішим,
-   а кнопка плавно зʼявляється.
-   ===============*/
+/* БЛОК 3, ЗАВДАННЯ 2
+   ГАЛЕРЕЯ / КАРТКИ З АНІМАЦІЄЮ ЗОБРАЖЕНЬ*/
 
-/* 
-   11. PRODUCTS
-   */
+
 .products {
     grid-area: products;
 }
@@ -511,10 +467,6 @@ aside {
     color: var(--color-light);
 }
 
-/* 
-   12. DECORATIVE BLOCK
-   Gradient + shadow + transparency
-   */
 .style-demo {
     width: 100%;
     max-width: 1000px;
@@ -545,9 +497,6 @@ aside {
     opacity: 0.85;
 }
 
-/* 
-   13. CONTACT PAGE
-   */
 .contact-page {
     background-image:
         linear-gradient(
@@ -600,9 +549,6 @@ aside {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* 
-   14. FORM
-   */
 .bottom-form-section {
     display: grid;
     justify-items: center;
@@ -666,9 +612,6 @@ aside {
     background: var(--color-dark-soft);
 }
 
-/* 
-   15. TABLE
-   */
 .contact-table {
     width: 100%;
     margin: 20px 0;
@@ -699,9 +642,6 @@ aside {
     background-color: #f9f9f9;
 }
 
-/* 
-   16. LISTS / TEXT / LINKS
-   */
 ol {
     line-height: 1.8;
     color: var(--color-text);
@@ -732,9 +672,6 @@ main a:hover {
     text-decoration: none;
 }
 
-/* 
-   17. FOOTER
-   */
 .footer {
     grid-area: footer;
 
@@ -802,17 +739,10 @@ main a:hover {
     transform: scale(1.2);
 }
 
-/* ===============
-   БЛОК 2, ЗАВДАННЯ 1
+/* БЛОК 2, ЗАВДАННЯ 1
    ДОДАТКОВА СТОРІНКА ЗІ СТРУКТУРОЮ CSS GRID
-   ---------------------------------------------------------
-   Сторінка catalog розміщується через grid-template-areas:
-   hero, filters, content, banner.
-   ===============*/
+*/
 
-/* 
-   18. CATALOG PAGE
-   */
 .catalog-page main {
     padding: 30px 20px;
 }
@@ -899,13 +829,8 @@ main a:hover {
     text-transform: uppercase;
 }
 
-/* ===============
-   БЛОК 3, ЗАВДАННЯ 5
-   СТИЛІЗОВАНІ ЧЕКБОКСИ
-   ---------------------------------------------------------
-   Стандартні checkbox замінено власним виглядом через CSS.
-   Працює для input type="checkbox" всередині .catalog-filter.
-   ===============*/
+/* БЛОК 3, ЗАВДАННЯ 5
+   СТИЛІЗОВАНІ ЧЕКБОКСИ*/
 .catalog-filter label {
     display: inline-grid;
     grid-template-columns: 18px 1fr;
@@ -1070,13 +995,9 @@ main a:hover {
     color: var(--color-light);
 }
 
-/* ===============
-   БЛОК 3, ЗАВДАННЯ 6
+/*  БЛОК 3, ЗАВДАННЯ 6
    БЛОК ФІКСОВАНОГО РОЗМІРУ З ТІННЮ + КАРТИНКА З ТІННЮ
-   ---------------------------------------------------------
-   .catalog__banner має фіксовану висоту на ПК, тінь та окремий
-   блок .catalog__banner-image з власною тінню для зображення.
-   ===============*/
+   */
 .catalog__banner {
     grid-area: banner;
 
@@ -1104,7 +1025,6 @@ main a:hover {
     gap: 15px;
 }
 
-/* Підтримка варіанту без .catalog__banner-text у HTML */
 .catalog__banner > h2,
 .catalog__banner > p,
 .catalog__banner > a {
@@ -1175,17 +1095,10 @@ main a:hover {
     -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* ===============
-   БЛОК 2, ЗАВДАННЯ 3
+/* БЛОК 2, ЗАВДАННЯ 3
    FIXED-ЕЛЕМЕНТ У КУТКУ СТОРІНКИ
-   ---------------------------------------------------------
-   Елемент закріплено через position: fixed, а при hover
-   він масштабується, обертається і деформується через skew().
-   ===============*/
+*/
 
-/* 
-   19. FIXED WIDGET
-   */
 .fixed-widget {
     position: fixed;
     right: 25px;
@@ -1224,19 +1137,9 @@ main a:hover {
     transform: scale(1.2) rotate(15deg) skew(-8deg);
 }
 
-/* ===============
-   БЛОК 2, ЗАВДАННЯ 2
-   АДАПТИВНІСТЬ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ
-   ---------------------------------------------------------
-   Медіа-запити змінюють сітку, меню, пошук, картки, таблиці,
-   форму та банер під планшети й телефони.
-   ===============*/
+/* БЛОК 2, ЗАВДАННЯ 2
+   АДАПТИВНІСТЬ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ*/
 
-/* 
-   20. MEDIA QUERIES
-   */
-
-/* Tablet */
 @media (max-width: 992px) {
     body:not(.contact-page):not(.catalog-page) main {
         grid-template-columns: 1fr;
@@ -1263,7 +1166,7 @@ main a:hover {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    /* Мобільний header: логотип по центру, burger зліва, пошук справа */
+    
     .header {
         top: 0;
 
@@ -1495,7 +1398,6 @@ main a:hover {
     }
 }
 
-/* Contact page on tablets */
 @media (max-width: 850px) {
     .row-container {
         grid-template-columns: 1fr;
@@ -1510,7 +1412,6 @@ main a:hover {
     }
 }
 
-/* Мобільні пристрої: вертикальна орієнтація */
 @media (max-width: 850px) and (orientation: portrait) {
     .catalog-page main.catalog,
     body:not(.contact-page):not(.catalog-page) main {
@@ -1522,7 +1423,7 @@ main a:hover {
     }
 }
 
-/* Мобільні пристрої: горизонтальна орієнтація */
+
 @media (max-width: 850px) and (orientation: landscape) {
     .video-slider {
         height: 260px;
@@ -1537,7 +1438,6 @@ main a:hover {
     }
 }
 
-/* Phone */
 @media (max-width: 600px) {
     main {
         padding: 20px;
@@ -1658,7 +1558,7 @@ main a:hover {
     }
 }
 
-/* Very small screens */
+
 @media (max-width: 420px) {
     .header {
         grid-template-columns: 44px 1fr 44px;
@@ -1721,13 +1621,8 @@ main a:hover {
     }
 }
 
-/* ===============
-   БЛОК 3, ЗАВДАННЯ 1
-   SANDWICH-МЕНЮ ДЛЯ ЕКРАНІВ 320PX
-   ---------------------------------------------------------
-   При ширині 320px меню відображається як кнопка-burger.
-   Відкриття меню працює через checkbox без JavaScript.
-   ===============*/
+/* БЛОК 3, ЗАВДАННЯ 1
+   SANDWICH-МЕНЮ ДЛЯ ЕКРАНІВ 320PX*/
 @media (max-width: 320px) {
     .header {
         grid-template-columns: 44px 1fr 44px;
